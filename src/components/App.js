@@ -9,7 +9,7 @@ const App = () => {
   ]);
 
   function handleComplete(id){
-let updatedTodo = todos.map(t=>t.id==id?{...t,iscomplete:true}:t);
+let updatedTodo = todos.map(t=>t.id===id?{...t,iscomplete:true}:t);
 setTodos(updatedTodo);
   }
   return (
