@@ -15,7 +15,7 @@ setTodos(updatedTodo);
   return (
     <div>
       <h1>Parent Component</h1>
-        <TodoList todos={todos} onclick={handleComplete}/>
+        <TodoList todos={todos} onClick={handleComplete}/>
     </div>
   )
 }
