@@ -8,7 +8,7 @@ export default function TodoList({todos, onClick}){
             return(
                 <li key={t.id}>
                     <span>{t.task}</span>
-                    {!t.iscomplete ? <button onClick={()=>onClick(t.id)}>Complete</button> : ""}
+                    {!t.iscomplete ? <button onClick={()=>onClick(t.id)}>Complete</button> : null}
                 </li>
             )
         })}
